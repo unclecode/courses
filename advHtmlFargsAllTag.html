@@ -1,0 +1,101 @@
+
+<form>
+    <p>
+        <input type='radio' id="dark" name="theme" value="dark" /> <label for="dark">Dark Theme</label>
+        <input type='radio' id="light" name="theme" value="light" /> <label for="light">Light Theme</label>
+    </p>
+    <fieldset>
+        <legend>Name</legend>
+        <p>
+            Firs name <input type="text" />
+        </p>
+        <p>
+            Last name <input type="text" />
+        </p>
+    </fieldset>
+    <p>
+        <select id='country' name="country">
+            <optgroup label="Africa">
+                <option value="gam">Gambia</option>
+                <option value="mad">Madagascar</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="my">Malaysia</option>
+                <option value="sg">Singapore</option>
+                <option value="zh">China</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="search-bar">
+            <input type="text" id="search" name="search" placeholder="What can I help you with today?">
+            <img class="search-icon" src="http://pixsector.com/cache/e7836840/av6584c34aabb39f00a10.png" width="45">
+        </label>
+    </p>
+
+    <p>
+        <label for="phonenum">
+            <input id="phonenum" name="phonenum" placeholder="Phone Number" pattern="[0-9]{5,}" title="At least 5 digits" type="tel" required>
+        </label>
+    </p>
+
+    <p>
+        <label for="email">
+            <input id="email" name="email" placeholder="Email Address" type="email" required>
+        </label>
+    </p>
+
+    <p>
+        <label for="url">
+            <input id="url" name="url" placeholder="Url" type="url">
+        </label>
+    </p>
+
+    <p>
+        <label for="color">
+            <input id="color" name="color" type="color" value="#ff8800" />
+        </label>
+    </p>
+
+    <p>
+        <label for="dt">
+            <input id="dt" name="dt" type="date" placeholder="Choose a date" />
+        </label>
+    </p>
+    <p>
+        <label for="tt">
+            <input id="tt" name="tt" type="time" placeholder="Choose a time" />
+        </label>
+    </p>
+    <p>
+        <label for="lang">
+            <input type="text" id="lang" name="lang" list="languages" placeholder="Choose your programming language, e.g. Javascript">
+            <datalist id="languages">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+                <option value="Java"></option>
+                <option value="Ruby"></option>
+                <option value="PHP"></option>
+                <option value="Go"></option>
+                <option value="Erlang"></option>
+                <option value="Python"></option>
+                <option value="C"></option>
+                <option value="C#"></option>
+                <option value="C++"></option>
+            </datalist>
+        </label>
+    </p>
+
+
+    <p>
+        <label for="range">
+            <input id="range" name='range' type="range" min="10" max="100" step="5" />
+            <output for="range" id="output"></output>
+        </label>
+    </p>
+
+    <p>
+        <input type="submit" name="submit" id="submit" value="Submit" />
+    </p>
+</form>
