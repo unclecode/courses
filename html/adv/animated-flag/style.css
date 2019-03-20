@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(toright, #e9e0eb, #e0e8eb);
+}
+
+.con {
+    width: 200px;
+    height: 140px;
+    margin: 200px auto;
+}
+
+.pole {
+    position: relative;
+    top: -110%;
+    background-color: #73838c;
+    border-radius: 10px;
+    width: 10px;
+    height: 300px;
+    box-shadow: inset -2px -2px 0 #5c6970;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07);
+}
+
+.pole:before {
+    position: absolute;
+    top: -14px;
+    left: -5px;
+    display: block;
+    background-color: #73838c;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    content: "";
+    box-shadow: inset -2px -2px 0 #5c6970;
+}
+
+.flag {
+    position: relative;
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.stripe {
+    position: absolute;
+    top: -20px;
+    height: 25px;
+    width: 220px;
+    content: "";
+}
+
+.red {
+    background: #f0a8a8;
+}
+
+.orange {
+    background: #f0cca8;
+}
+
+.yellow {
+    background: #f0f0a8;
+}
+
+.green {
+    background: #baf0a8;
+}
+
+.blue {
+    background: #a8def0;
+}
+
+.darkPurple {
+    background: #baa8f0;
+}
+
+.violet {
+    background: #dea8f0;
+}
+
+.slider {
+    position: absolute;
+    top: 550px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 180px;
+    height: 15px;
+    margin-left: 20px;
+    background: linear-gradient(
+    to right,
+    #f0a8a8,
+    #f0cca8,
+    #f0f0a8,
+    #baf0a8,
+    #a8def0,
+    #baa8f0,
+    #dea8f0
+    );
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+#value {
+    text-align: center;
+    margin: -50px 0 0 7px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+}
+
+.elliax {
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    color: #73838c;
+}
+
+.elliax a {
+    color: #baa8f0;
+    text-decoration: none;
+}
